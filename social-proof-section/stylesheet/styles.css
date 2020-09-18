@@ -1,3 +1,42 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit; 
+}
+html, body {
+  height: 100vh; 
+  margin: 0px;
+  padding: 0px; 
+  width: 100vw;
+}
+
+:root {
+  /* Primary */
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  /* Neutral */
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: White: hsl(0, 0%, 100%);
+}
+
+body {
+  align-items: center; 
+  background-color: var(--white);
+  /* background-image: url('../images/bg-pattern-top-desktop.svg'); */
+  display: flex; 
+  justify-content: center; 
+}
+main {
+  outline: 2px solid red; 
+  height: 75%;
+  width: 90%;
+}
+
+
+
+
 .attribution {
   font-size: 11px;
   text-align: center;
