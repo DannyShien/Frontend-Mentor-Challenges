@@ -18,7 +18,7 @@ html, body {
   /* Neutral */
   --dark-grayish-magenta: hsl(303, 10%, 53%);
   --light-grayish-magenta: hsl(300, 24%, 96%);
-  --white: White: hsl(0, 0%, 100%);
+  --white: hsl(0, 0%, 100%);
 }
 
 body {
@@ -26,12 +26,28 @@ body {
   background-color: var(--white);
   /* background-image: url('../images/bg-pattern-top-desktop.svg'); */
   display: flex; 
+  font-size: 15px; 
   justify-content: center; 
 }
 main {
-  outline: 2px solid red; 
+  display: flex; 
+  flex-direction: column;
   height: 75%;
+  justify-content: space-between;
+  outline: 2px solid red; 
   width: 90%;
+}
+.upper {
+  outline: 1px solid green;
+  display: flex; 
+  height: 100%;
+}
+.lower{
+  height: 100%;
+  outline: 1px solid blue;
+}
+.reviews {
+  display: flex;
 }
 
 
