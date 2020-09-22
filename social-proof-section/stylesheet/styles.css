@@ -24,7 +24,10 @@ html, body {
 body {
   align-items: center; 
   background-color: var(--white);
-  /* background-image: url('../images/bg-pattern-top-desktop.svg'); */
+  background-image: url('../images/bg-pattern-top-desktop.svg'), url('../images/bg-pattern-bottom-desktop.svg');
+  background-position: top left, right bottom;
+  background-size: 500px, 70%;
+  background-repeat: no-repeat;
   display: flex; 
   font-family: 'Spartan', sans-serif;
   font-size: 15px; 
