@@ -92,10 +92,10 @@ main {
   margin: 8px 0;
   width: 80%;
 }
-.ratingBox:first-child {
+.toLeft {
   margin-right: 75px;
 } 
-.ratingBox:last-child {
+.toRight {
   margin-left: 75px;
 }
 .ratingStars {
@@ -112,6 +112,7 @@ main {
 }
 .sourceInfo {
   align-items: center; 
+  color: var(--very-dark-magenta);
   display: flex; 
   font-size: 65%;
   font-weight: 700;
@@ -139,10 +140,10 @@ main {
   height: 80%;
   width: 31%;
 }
-.reviewCard:nth-child(2) {
+.item2 {
   margin-top: 20px;
 }
-.reviewCard:last-child {
+.item3 {
   margin-top: 40px;
 }
 .cardHeader {
@@ -189,4 +190,87 @@ main {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    height: 100%;
+  }
+  main {
+    width: 90%;
+    height: 100%;
+    /* background-color: aliceblue; */
+  }
+  .upper {
+    align-items: center;
+    flex-direction: column; 
+    margin-top: 25%;
+  }
+  .info {
+    align-items: center; 
+    justify-content: center; 
+    width: 90%;
+  }
+  .info p:first-child {
+    font-size: 220%;
+    text-align: center; 
+    width: 100%;
+  }
+  .info p:last-child {
+    width: 100%;
+    font-size: 85%;
+    line-height: 1.5;
+    margin: 10% 0;
+    text-align: center; 
+  }
+  .ratings {
+    width: 90%;
+  }
+  .ratingContent {
+    height: 100%;
+  }
+  .ratingBox {
+    align-items: center; 
+    flex-direction: column;
+    height: 50%;
+    margin: 2% 0; 
+    width: 100%;
+  }
+  .ratingStars {
+    margin: 3% 0;
+  }
+  .ratingStars img {
+    height: 80%;
+  }
+  .sourceInfo {
+    font-size: 70%;
+    margin: 0;
+  }
+  .sourceInfo p {
+    margin: 2% 0 10% 0;
+  }
+
+  .lower {
+    margin-top: 3%;
+  }
+  .reviews {
+    flex-direction: column;
+  }
+  .reviewCard {
+    margin-top: 20px;
+    width: 90%;
+  }
+  .cardHeader {
+    padding: 0;
+    width: 81%;
+  }
+  .userInfo {
+    width: 75%;
+  }
+  .cardBody {
+    width: 81%;
+  }
+
+
+
 }
