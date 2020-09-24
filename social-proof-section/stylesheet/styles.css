@@ -194,17 +194,18 @@ main {
 
 @media screen and (max-width: 375px) {
   body {
+    background-image: url('../images/bg-pattern-top-desktop.svg');
+    background-position: top left;
+    background-size: 425px;
+    background-repeat: no-repeat;
     height: 100%;
   }
   main {
     width: 90%;
-    height: 100%;
-    /* background-color: aliceblue; */
   }
   .upper {
     align-items: center;
     flex-direction: column; 
-    margin-top: 25%;
   }
   .info {
     align-items: center; 
